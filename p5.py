@@ -27,7 +27,7 @@ def tot(sequence, total=0):
             if sequence[counter] == u'+':
                 plus_minus = 1
         counter += 1
-    total = int(temp)*plus_minus
+    total += int(temp)*plus_minus
     return total
 
 if __name__ == "__main__":
