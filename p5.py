@@ -11,18 +11,16 @@ def sum100(current=2, sequence='1'):
 
 
 def tot(sequence, total=0):
-    """Helper method for finding total of string sequence.
-
-    plus_minus = 1 or -1"""
-    total, counter = 0
+    """Helper method for finding total of string sequence."""
+    total = counter = 0
     temp = ''
-    plus_minus = 1
+    plus_minus = 1      # variable for managing + and -
     while counter < len(sequence):
         try:
             int(sequence[counter])
-            temp = temp+sequence[counter]
+            temp += sequence[counter]
         except ValueError:
-            total = total + (int(temp)*plus_minus)
+            total += int(temp)*plus_minus
             temp = ''
             if sequence[counter] == u'-':
                 plus_minus = -1
