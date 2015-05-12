@@ -8,16 +8,14 @@ def sum100(current=2, sequence='1'):
     else:
         if tot(sequence) == 100:
             print sequence
-            return sequence
 
 
 def tot(sequence, total=0):
     """Helper method for finding total of string sequence.
 
     plus_minus = 1 or -1"""
-    total = 0
+    total, counter = 0
     temp = ''
-    counter = 0
     plus_minus = 1
     while counter < len(sequence):
         try:
