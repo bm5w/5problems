@@ -11,7 +11,7 @@ def sum100(current=2, sequence='1'):
 
 
 def tot(sequence, total=0):
-    """Helper method for finding total of string sequence."""
+    """Helper method: returns total of string sequence."""
     total = counter = 0
     temp = ''
     plus_minus = 1      # variable for managing + and -
